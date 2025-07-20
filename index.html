@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Stopwatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stopwatch-container">
+        <div class="time-display">00:00:00.000</div>
+        <div class="controls">
+            <button class="start-btn" onclick="startStopwatch()"><i class="fas fa-play"></i> Start</button>
+            <button class="stop-btn" onclick="stopStopwatch()" disabled><i class="fas fa-pause"></i> Stop</button>
+            <button class="reset-btn" onclick="resetStopwatch()" disabled><i class="fas fa-undo"></i> Reset</button>
+            <button class="lap-btn" onclick="recordLap()" disabled><i class="fas fa-stopwatch"></i> Lap</button>
+        </div>
+        <div class="laps" id="laps"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
